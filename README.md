@@ -62,6 +62,6 @@ the site on every push to `main`. Nothing else to do.
 ## Before you launch
 
 - The sample post (`src/content/blog/hello-world.md`) stays in the repo as a draft for styling reference; it is not published
-- Confirm the contact email on the Work With Us page (currently `hello@localangle.co`)
+- Confirm the contact email on the Work With Us page (currently `chase@localangle.co`)
 - Point the Backfield nav link at the real product site when it exists
   (in `src/layouts/Base.astro`)
