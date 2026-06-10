@@ -1,0 +1,177 @@
+---
+import Base from "../layouts/Base.astro";
+import { getPosts, formatDate } from "../lib/posts";
+
+const posts = (await getPosts()).slice(0, 5);
+---
+<Base>
+  <p class="statement">
+    Local Angle is a consultancy and product lab<br class="statement-break" />
+    helping news organizations apply emerging technologies<br class="statement-break" />
+    in ways that align with journalistic values.
+  </p>
+
+  <div class="manifesto">
+    <div class="manifesto-intro">
+      <p>
+        Local Angle was founded by <a href="https://www.linkedin.com/in/chasejdavis/">Chase Davis</a>, a journalist who has spent his
+        career working at the leading edge of journalism and emerging
+        technologies.
+      </p>
+      <p>
+        Among other things, Chase has led the Interactive News team at The New
+        York Times, overseen digital and cultural transformation at the
+        Minnesota Star Tribune, and worked as a reporter, data journalist, and
+        software engineer at a variety of news organizations.
+      </p>
+      <p>
+        Local Angle partners with forward-thinking news organizations interested
+        in accelerating their adoption of emerging technologies in ways that
+        serve both the mission and business of news. We build, we teach, we
+        co-create — often in partnership with some of the best minds in
+        journalism and technology.
+      </p>
+    </div>
+
+    <p class="manifesto-lead">Here are some things we believe:</p>
+
+    <section>
+      <h2>Journalism is different</h2>
+      <p>
+        News is a public trust. News businesses are unique because they must
+        continually balance this mission with their bottom line.
+      </p>
+      <p>
+        Working with news organizations means being able to frame the business
+        in the valuable norms, ethics, and standards that are central to the
+        mission — and vice-versa.
+      </p>
+      <p>
+        We think this natural tension is a feature, not a bug. And navigating it
+        is key to success.
+      </p>
+    </section>
+
+    <section>
+      <h2>We have a journalistic obligation to understand emerging technologies</h2>
+      <p>
+        It is reasonable to be skeptical or anxious about how AI and other
+        emerging technologies show up in the news industry. It is not reasonable
+        to ignore them or refuse to engage.
+      </p>
+      <p>
+        Our sources are using them. The institutions we cover are using them. Our
+        communities will continue to be shaped by them. We don't have to blindly
+        adopt them, but we do have a journalistic obligation to understand them.
+      </p>
+    </section>
+
+    <section>
+      <h2>Play offense, thoughtfully</h2>
+      <p>
+        The news industry has an unfortunate history of having emerging
+        technologies inflicted upon it. Whether it's Craigslist, search, social,
+        video, or any number of other technological and social trends, we often
+        find ourselves on the back foot.
+      </p>
+      <p>
+        Succeeding at the pace of modern technological change means putting
+        systems and processes in place to prevent this — approaching new
+        technologies with a sense of curiosity, optimism, and thoughtful
+        experimentation.
+      </p>
+    </section>
+
+    <section>
+      <h2>Performative innovation isn't</h2>
+      <p>
+        There's a lot of bullshit out there. Especially now. Half-baked products
+        and fancy demos dressed up to tell a story of innovation, rather than
+        solve real problems or create meaningful new opportunities.
+      </p>
+      <p>
+        The best work is inspired by the hardest problems. That's where we
+        prefer to spend our time.
+      </p>
+    </section>
+
+    <section>
+      <h2>Everyone is a builder now</h2>
+      <p>
+        AI is breaking down the walls of expertise that used to divide
+        disciplines. Journalists who have never written a line of code are now
+        vibing their own web scrapers. Product managers are building working
+        prototypes. Advertising, finance, and human resources professionals are
+        using skills and custom GPTs to make their lives better and easier.
+      </p>
+      <p>
+        Everyone is a builder. And that's incredibly empowering. It magnifies
+        what each of us is capable of and helps us draw connections that can
+        take us in exciting new directions.
+      </p>
+    </section>
+  </div>
+
+  {posts.length > 0 && (
+    <section class="recent">
+      <p class="kicker">Recent writing</p>
+      <ul class="posts">
+        {posts.map((post) => (
+          <li>
+            <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+            <a href={`/blog/${post.id}`}>{post.data.title}</a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )}
+</Base>
+
+<style>
+  .manifesto {
+    max-width: var(--measure);
+    margin-top: 4.5rem;
+  }
+
+  .manifesto-intro {
+    margin: 0 0 2rem;
+  }
+
+  .manifesto-intro p {
+    margin: 0 0 1.25em;
+    font-size: 1.06rem;
+    line-height: 1.55;
+    color: #3c3831;
+  }
+
+  .manifesto-intro p:last-child {
+    margin-bottom: 0;
+  }
+
+  .manifesto-lead {
+    margin: 2.5rem 0 0;
+    font-size: 1.06rem;
+    line-height: 1.55;
+    color: #3c3831;
+  }
+
+  .manifesto section {
+    border-top: 1px solid var(--rule);
+    padding: 2rem 0 0.6rem;
+  }
+
+  .manifesto h2 {
+    font-size: 1.3rem;
+    margin: 0 0 0.6rem;
+  }
+
+  .manifesto p {
+    margin: 0 0 1.25em;
+    font-size: 1.02rem;
+    color: #3c3831;
+  }
+
+  .recent {
+    margin-top: 5rem;
+  }
+</style>

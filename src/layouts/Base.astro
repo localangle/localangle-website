@@ -1,0 +1,58 @@
+---
+import "@fontsource-variable/newsreader";
+import "@fontsource-variable/newsreader/wght-italic.css";
+import "../styles/global.css";
+import Mark from "../components/Mark.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title,
+  description = "Local Angle is a consultancy and product lab that helps news organizations apply emerging technologies in ways that align with journalistic values.",
+} = Astro.props;
+
+const pageTitle = title ? `${title} — Local Angle` : "Local Angle";
+const path = Astro.url.pathname;
+const isBlog = path.startsWith("/blog");
+const isWork = path.startsWith("/work-with-us");
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" type="application/rss+xml" title="Local Angle" href="/rss.xml" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+  </head>
+  <body>
+    <header class="site frame">
+      <div class="row">
+        <a class="brand" href="/">
+          <Mark size={20} />
+          <span>Local Angle</span>
+        </a>
+        <nav class="site">
+          <a href="/blog" aria-current={isBlog ? "page" : undefined}>Blog</a>
+          <a href="/work-with-us" aria-current={isWork ? "page" : undefined}>Work with us</a>
+        </nav>
+      </div>
+    </header>
+    <main class="frame">
+      <slot />
+    </main>
+    <footer class="site frame">
+      <div class="row">
+        <span>&copy; {new Date().getFullYear()} Local Angle</span>
+        <span><a href="/rss.xml">RSS</a></span>
+      </div>
+    </footer>
+  </body>
+</html>

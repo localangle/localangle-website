@@ -1,0 +1,28 @@
+---
+import Base from "../../layouts/Base.astro";
+import { getPosts, formatDate } from "../../lib/posts";
+
+const posts = await getPosts();
+---
+<Base title="Blog">
+  <p class="kicker">Writing</p>
+  {posts.length > 0 ? (
+    <ul class="posts">
+      {posts.map((post) => (
+        <li>
+          <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
+          <a href={`/blog/${post.id}`}>{post.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="empty">Nothing yet. We only post when we have something to say.</p>
+  )}
+</Base>
+
+<style>
+  .empty {
+    color: var(--muted);
+    font-style: italic;
+  }
+</style>
