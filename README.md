@@ -50,6 +50,9 @@ the site on every push to `main`. Nothing else to do.
    `185.199.108.153`, `.109.`, `.110.`, `.111.`), and add the custom domain in
    the Pages settings. The `public/CNAME` file keeps the domain attached
    across deploys.
+4. When `localangle.co` is live, remove `ASTRO_BASE: /localangle-website` from
+   `.github/workflows/deploy.yml` and redeploy. That env var is only needed for
+   the interim `github.io/localangle-website` preview URL.
 
 ## Editing the site itself
 

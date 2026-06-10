@@ -18,6 +18,8 @@ jobs:
         uses: actions/checkout@v6
       - name: Install, build, and upload site
         uses: withastro/action@v6
+        env:
+          ASTRO_BASE: /localangle-website
 
   deploy:
     needs: build
