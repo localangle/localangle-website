@@ -47,12 +47,9 @@ the site on every push to `main`. Nothing else to do.
 1. Push this repo to GitHub.
 2. In the repo settings → Pages, set **Source** to **GitHub Actions**.
 3. Point DNS for `localangle.co` at GitHub Pages (A records for the apex:
-   `185.199.108.153`, `.109.`, `.110.`, `.111.`), and add the custom domain in
-   the Pages settings. The `public/CNAME` file keeps the domain attached
+   `185.199.108.153`, `.109.`, `.110.`, `.111.`), and set `www` to CNAME
+   `localangle.github.io`. The `public/CNAME` file keeps the domain attached
    across deploys.
-4. When `localangle.co` is live, remove `ASTRO_BASE: /localangle-website` from
-   `.github/workflows/deploy.yml` and redeploy. That env var is only needed for
-   the interim `github.io/localangle-website` preview URL.
 
 ## Editing the site itself
 
