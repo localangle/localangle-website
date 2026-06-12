@@ -1,6 +1,6 @@
 ---
 title: "Turning problems into other problems"
-date: 2026-03-20
+date: 2026-03-17
 description: "Large language models are often most useful not because they solve hard problems outright, but because they help transform them into other, more tractable problems."
 ---
 

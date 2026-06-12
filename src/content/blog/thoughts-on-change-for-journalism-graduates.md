@@ -1,6 +1,6 @@
 ---
 title: "Thoughts on change for journalism graduates"
-date: 2026-06-01
+date: 2026-05-20
 description: "A commencement address at the Missouri School of Journalism on facing change, making conscious choices, and keeping your own path in journalism."
 ---
 

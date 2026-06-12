@@ -1,6 +1,6 @@
 ---
 title: "AI is not an \"it\""
-date: 2026-06-10
+date: 2026-06-01
 description: "Why treating AI as a monolith weakens journalism's ability to assess technology, and what a more useful conversation looks like."
 ---
 
