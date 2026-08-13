@@ -31,7 +31,7 @@ import Base from "../layouts/Base.astro";
             height="903"
             loading="lazy"
           />
-          <figcaption>Review extracted places alongside source evidence and geography.</figcaption>
+          <figcaption>Review and geocode extracted places.</figcaption>
         </figure>
         <figure class="carousel-slide" data-carousel-slide aria-hidden="true" hidden>
           <img
@@ -41,7 +41,7 @@ import Base from "../layouts/Base.astro";
             height="891"
             loading="lazy"
           />
-          <figcaption>Inspect people, roles, affiliations and their supporting passages.</figcaption>
+          <figcaption>Inspect people, their roles, quotes and supporting evidence.</figcaption>
         </figure>
         <figure class="carousel-slide" data-carousel-slide aria-hidden="true" hidden>
           <img
@@ -52,6 +52,16 @@ import Base from "../layouts/Base.astro";
             loading="lazy"
           />
           <figcaption>Maintain canonical entities, geography and connections in Stylebook.</figcaption>
+        </figure>
+        <figure class="carousel-slide" data-carousel-slide aria-hidden="true" hidden>
+          <img
+            src="/images/backfield/carousel-5.png"
+            alt="API Playground showing geographic search of locations with a bounding box on a map"
+            width="1800"
+            height="872"
+            loading="lazy"
+          />
+          <figcaption>Explore and query structured coverage data through the Backfield API.</figcaption>
         </figure>
       </div>
     </section>
@@ -68,17 +78,17 @@ import Base from "../layouts/Base.astro";
     <section class="introduction">
       <p class="eyebrow">About</p>
       <p class="lede">
-        A news story is more than its headline and lede. It’s also a record of people,
-        places, issues and ideas. Backfield is an open platform that structures and connects
-        that information — turning your journalism into data that can power new products,
-        generate insights, and particpate in the emerging AI ecosystem.
+        Beyond the headline and the lede, every news story is full of quotes, anecdotes,
+        people, places, facts and connections that are valuable beyond the story itself.
+        Backfield is an open platform that captures and enriches that information — turning
+        the journalism you produce every day into data you can build with.
       </p>
     </section>
 
     <section class="capabilities">
-      <h2>From articles to structured knowledge</h2>
+      <h2>From articles<br />to structured knowledge</h2>
       <p class="capabilities-intro">
-        We normally think of the article as the atomic unit of journalism. Backfield goes
+        We tend to think about the article as the atomic unit of journalism. Backfield goes
         deeper, structuring entities and concepts within each story so they can be connected
         across your coverage and put to work in new ways.
       </p>
@@ -105,8 +115,8 @@ import Base from "../layouts/Base.astro";
           <p class="capability-number">03</p>
           <h3>Describe</h3>
           <p>
-            Generate consistent subjects, user needs, story forms and other metadata,
-            then create embeddings for semantic search and similarity.
+            Classify stories based on subject, user needs, story forms and other metadata,
+            then create embeddings to enable semantic search and similarity.
           </p>
         </article>
 
@@ -124,7 +134,7 @@ import Base from "../layouts/Base.astro";
     <section class="how-it-works">
       <div class="section-heading">
         <p class="eyebrow">How it works</p>
-        <h2>One platform, three applications</h2>
+        <h2>One platform,<br />three applications</h2>
       </div>
       <div class="product-list">
         <article>
@@ -137,15 +147,15 @@ import Base from "../layouts/Base.astro";
         <article>
           <h3>Stylebook</h3>
           <p>
-            Create and maintain canonical records for the people, places and organizations
-            featured in your coverage.
+            Create, maintain, connect and enrich canonical records for the people, places
+            and organizations featured in your coverage.
           </p>
         </article>
         <article>
           <h3>Backfield API</h3>
           <p>
-            Search and retrieve the resulting data to power newsroom tools, audience-facing
-            products and other applications.
+            Query the resulting data to power newsroom tools, audience-facing products
+            and other applications.
           </p>
         </article>
       </div>
@@ -158,8 +168,8 @@ import Base from "../layouts/Base.astro";
           <h2>Make more of the journalism you already produce.</h2>
           <p class="use-cases-intro">
             We’ve developed many of these ideas through experiments with working news
-            organizations. They’re examples of what becomes possible when the information
-            inside your journalism is available as structured data.
+            organizations. Consider them just a few examples of what's possible when the
+            information within your journalism is available as structured data.
           </p>
         </div>
       </div>
@@ -168,48 +178,48 @@ import Base from "../layouts/Base.astro";
         <article>
           <h3>Build local products</h3>
           <p>
-            Create neighborhood feeds, local newsletters and other experiences based
-            on places mentioned anywhere in your reporting.
+            Create feeds for neighborhoods, suburbs and towns; build local newsletters
+            and other experiences based on the places mentioned in your reporting.
           </p>
         </article>
 
         <article>
-          <h3>Understand coverage</h3>
+          <h3>Understand your coverage</h3>
           <p>
-            Map where reporting happens, examine who appears in it and see how your
-            coverage connects to communities and institutions.
+            Map your reporting, audit the sources you quote, and see how your report
+            might appear in the eyes of the communities you cover.
           </p>
         </article>
 
         <article>
-          <h3>Search by meaning</h3>
+          <h3>Turn narratives into interactives</h3>
           <p>
-            Use entities, metadata and embeddings to find related reporting even when
-            stories don’t use the same words.
+            Extract custom information from articles, such as ingredients from recipes, or
+            restaurants from restaurant roundups, and use that data to build new story forms.
           </p>
         </article>
 
         <article>
-          <h3>Structure specialized content</h3>
+          <h3>Give new life to your archives</h3>
           <p>
-            Extract ingredients from recipes, milestones from obituaries or other
-            newsroom-specific information buried in narrative text.
+            Enable geographic, semantic and entity-based search across your archive; create
+            a community knowledge graph that can inform your reporting.
           </p>
         </article>
 
         <article>
-          <h3>Enrich analytics</h3>
+          <h3>Enrich your analytics</h3>
           <p>
-            Add consistent subjects, user needs and story forms to understand what
-            you publish and how audiences respond to it.
+            Add custom metadata like subjects, user needs and story forms to your articles,
+            then use those to ask more nuanced questions about how your coverage performs.
           </p>
         </article>
 
         <article>
           <h3>Support new revenue</h3>
           <p>
-            Connect coverage to places, topics and organizations in ways that support
-            sponsorships, fundraising and other commercial products.
+            Tell your story to advertisers and funders, showing how your coverage intersects
+            with their needs and interests.
           </p>
         </article>
       </div>
@@ -229,27 +239,34 @@ import Base from "../layouts/Base.astro";
         <details>
           <summary>Who is Backfield for?</summary>
           <p>
-            Backfield is designed for news organizations that want to build
-            products from their coverage, improve metadata, understand reporting
-            patterns or create a reliable knowledge layer for AI and search.
+            Backfield is for any news organization that wants to explore how structured
+            journalism can benefit their business or their mission.
+          </p>
+          <p>
+            The platform is free to use under an Apache 2.0 license. If you don’t have
+            engineering capacity or technical expertise, Local Angle offers several hosting 
+            options and is happy to work with you to build products based on the data you create.
+          </p>
+          <p>
+            For large organizations, Backfield is engineered to work at scale – capable of
+            processing thousands of articles on dedicated and horizontally scalable
+            infrastructure. You’re welcome to host it yourself, or Local Angle can do it
+            for you.
           </p>
         </details>
         <details>
           <summary>How do I get started using Backfield?</summary>
           <p>
             Backfield is an open source platform, and you are welcome to run it
-            locally or deploy it yourself by following the directions here.
+            locally or deploy it yourself by following the directions <a href="https://github.com/localangle/backfield">here</a>.
           </p>
           <p>
             Local Angle also offers hosting, onboarding and consulting services if
-            you would like to run the platform without technical overhead.
-            Contact <strong>backfield@localangle.co</strong> if you’re interested.
+            you would like to run the platform without technical overhead. If you
+            are interested in managed hosting, sign up for <a href="https://forms.gle/4TsNHXGZqxmJN4Zw9">the waitlist</a>.
           </p>
-        </details>
-        <details>
-          <summary>How is AI used in Backfield?</summary>
-          <p>
-            XXX
+          <p>  
+            Contact <strong>backfield@localangle.co</strong> if you have any questions.
           </p>
         </details>
         <details>
@@ -258,8 +275,8 @@ import Base from "../layouts/Base.astro";
             Backfield is model-agnostic. Out of the box, it works with the broad range
             of hosted and open models supported by the
             <a href="https://models.litellm.ai/">LiteLLM ecosystem</a>, including models
-            from OpenAI, Anthropic, Google, xAI and many others. It can also be configured
-            to use self-hosted or proprietary models.
+            from OpenAI, Anthropic, Google, xAI and popular open-weights alternatives.
+            It can also be configured to use self-hosted or proprietary models.
           </p>
         </details>
         <details>
@@ -267,18 +284,18 @@ import Base from "../layouts/Base.astro";
           <p>
             Backfield gives you control over where your data goes. When a workflow uses
             an external language model, geocoder or search service, the information
-            needed for that step is sent to the provider you have configured and is
+            needed for that step is sent to that provider. What happens next is
             governed by that provider’s privacy and data-retention policies.
           </p>
           <p>
-            Many commercial model APIs do not use customer API data to train their
-            models by default, but policies vary by provider and service. Backfield can
+            Many commercial model APIs explicitly do not use customer API data to train 
+            their models, but policies vary by provider and service. Backfield can
             also be configured to use self-hosted or proprietary models when tighter
             data controls are required.
           </p>
           <p>
             We can work with your organization to choose providers and deployment
-            options that meet your privacy and security requirements.
+            options that balance between accuracy, privacy and security.
           </p>
         </details>
         <details>
@@ -294,7 +311,7 @@ import Base from "../layouts/Base.astro";
             some errors around the edges, you may decide you don’t need human review at all.
           </p>
           <p>
-            But Backfield data is at its best when it is at leat occasionally reviewed by
+            But Backfield data is at its best when it is at least occasionally reviewed by
             reporters and editors. There are a number of tools in the system designed to
             make that process quick and easy. And we can also do things like integrate
             with Slack to notify reporters and editors when there’s something they may
@@ -307,12 +324,6 @@ import Base from "../layouts/Base.astro";
           </p>
           <p>
             At the end of the day, the level of human involvement you need is up to you.
-          </p>
-        </details>
-        <details>
-          <summary>We don’t have an engineering team. Can we still use Backfield?</summary>
-          <p>
-            XX
           </p>
         </details>
         <details>
@@ -338,7 +349,7 @@ import Base from "../layouts/Base.astro";
             </li>
           </ul>
           <p>
-            Those numbers can vary considerably. Model costs depend on what you choose
+            Those numbers can vary considerably. AI costs depend on what models you choose
             to run, and Backfield can be hosted for substantially less — or more —
             depending on your architecture. A well-maintained Stylebook can also reduce
             costs and improve performance by avoiding unnecessary calls to external
@@ -377,7 +388,7 @@ import Base from "../layouts/Base.astro";
 
     <section class="hosted">
       <div class="section-copy">
-        <h2>Want to try Backfield without running it yourself?</h2>
+        <h2>Want to try Backfield without hosting it yourself?</h2>
         <p>
           Local Angle operates a hosted version of Backfield for organizations
           that want to adopt the platform but not manage its infrastructure.
