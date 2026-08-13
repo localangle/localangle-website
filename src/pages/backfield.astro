@@ -1,0 +1,924 @@
+---
+import Base from "../layouts/Base.astro";
+---
+
+<Base
+  title="Backfield"
+  description="Backfield turns journalism into data you can build with."
+>
+  <article class="backfield">
+    <section
+      class="product-carousel"
+      data-carousel
+      aria-label="Backfield product screenshots"
+      aria-roledescription="carousel"
+    >
+      <div class="carousel-stage">
+        <figure class="carousel-slide is-active" data-carousel-slide aria-hidden="false">
+          <img
+            src="/images/backfield/carousel-1.png"
+            alt="Agate flow builder connecting article input to entity extraction, geocoding, metadata and JSON output"
+            width="1800"
+            height="895"
+          />
+          <figcaption>Build custom extraction and enrichment workflows in Agate.</figcaption>
+        </figure>
+        <figure class="carousel-slide" data-carousel-slide aria-hidden="true" hidden>
+          <img
+            src="/images/backfield/carousel-2.png"
+            alt="Agate places review interface showing highlighted source evidence beside a map and geocoded locations"
+            width="1800"
+            height="903"
+            loading="lazy"
+          />
+          <figcaption>Review extracted places alongside source evidence and geography.</figcaption>
+        </figure>
+        <figure class="carousel-slide" data-carousel-slide aria-hidden="true" hidden>
+          <img
+            src="/images/backfield/carousel-3.png"
+            alt="Agate people review interface showing article evidence and extracted people with roles and affiliations"
+            width="1800"
+            height="891"
+            loading="lazy"
+          />
+          <figcaption>Inspect people, roles, affiliations and their supporting passages.</figcaption>
+        </figure>
+        <figure class="carousel-slide" data-carousel-slide aria-hidden="true" hidden>
+          <img
+            src="/images/backfield/carousel-4.png"
+            alt="Stylebook geography interface showing a maintained neighborhood boundary on a map of Chicago"
+            width="1800"
+            height="904"
+            loading="lazy"
+          />
+          <figcaption>Maintain canonical entities, geography and connections in Stylebook.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <header class="hero">
+      <h1>Backfield turns journalism into data you can build with.</h1>
+      <nav class="hero-actions" aria-label="Backfield links">
+        <a class="button" href="https://try.backfield.news" target="_blank" rel="noopener noreferrer">Try a demo</a>
+        <a class="text-link" href="https://github.com/localangle/backfield" target="_blank" rel="noopener noreferrer">Get the code <span aria-hidden="true">›</span></a>
+        <a class="text-link" href="https://docs.backfield.news" target="_blank" rel="noopener noreferrer">Read the docs <span aria-hidden="true">›</span></a>
+      </nav>
+    </header>
+
+    <section class="introduction">
+      <p class="eyebrow">About</p>
+      <p class="lede">
+        A news story is more than its headline and lede. It’s also a record of people,
+        places, issues and ideas. Backfield is an open platform that structures and connects
+        that information — turning your journalism into data that can power new products,
+        generate insights, and particpate in the emerging AI ecosystem.
+      </p>
+    </section>
+
+    <section class="capabilities">
+      <h2>From articles to structured knowledge</h2>
+      <p class="capabilities-intro">
+        We normally think of the article as the atomic unit of journalism. Backfield goes
+        deeper, structuring entities and concepts within each story so they can be connected
+        across your coverage and put to work in new ways.
+      </p>
+      <div class="capability-grid">
+        <article>
+          <p class="capability-number">01</p>
+          <h3>Extract</h3>
+          <p>
+            Identify people, places, organizations, quotes and events — or define
+            custom extractions for things like recipes, obituaries and other story forms.
+          </p>
+        </article>
+
+        <article>
+          <p class="capability-number">02</p>
+          <h3>Enrich</h3>
+          <p>
+            Geocode places, resolve entities to canonical records, attach geographic
+            boundaries and add newsroom-specific context.
+          </p>
+        </article>
+
+        <article>
+          <p class="capability-number">03</p>
+          <h3>Describe</h3>
+          <p>
+            Generate consistent subjects, user needs, story forms and other metadata,
+            then create embeddings for semantic search and similarity.
+          </p>
+        </article>
+
+        <article>
+          <p class="capability-number">04</p>
+          <h3>Build</h3>
+          <p>
+            Query your coverage by person, place, topic or meaning to power search,
+            feeds, newsletters, analytics and other products.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="section-heading">
+        <p class="eyebrow">How it works</p>
+        <h2>One platform, three applications</h2>
+      </div>
+      <div class="product-list">
+        <article>
+          <h3>Agate</h3>
+          <p>
+            Build workflows that turn stories into structured data, with editorial
+            review built into the process.
+          </p>
+        </article>
+        <article>
+          <h3>Stylebook</h3>
+          <p>
+            Create and maintain canonical records for the people, places and organizations
+            featured in your coverage.
+          </p>
+        </article>
+        <article>
+          <h3>Backfield API</h3>
+          <p>
+            Search and retrieve the resulting data to power newsroom tools, audience-facing
+            products and other applications.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="use-cases">
+      <div class="section-heading">
+        <p class="eyebrow">How it’s used</p>
+        <div class="section-copy">
+          <h2>Make more of the journalism you already produce.</h2>
+          <p class="use-cases-intro">
+            We’ve developed many of these ideas through experiments with working news
+            organizations. They’re examples of what becomes possible when the information
+            inside your journalism is available as structured data.
+          </p>
+        </div>
+      </div>
+
+      <div class="use-case-grid">
+        <article>
+          <h3>Build local products</h3>
+          <p>
+            Create neighborhood feeds, local newsletters and other experiences based
+            on places mentioned anywhere in your reporting.
+          </p>
+        </article>
+
+        <article>
+          <h3>Understand coverage</h3>
+          <p>
+            Map where reporting happens, examine who appears in it and see how your
+            coverage connects to communities and institutions.
+          </p>
+        </article>
+
+        <article>
+          <h3>Search by meaning</h3>
+          <p>
+            Use entities, metadata and embeddings to find related reporting even when
+            stories don’t use the same words.
+          </p>
+        </article>
+
+        <article>
+          <h3>Structure specialized content</h3>
+          <p>
+            Extract ingredients from recipes, milestones from obituaries or other
+            newsroom-specific information buried in narrative text.
+          </p>
+        </article>
+
+        <article>
+          <h3>Enrich analytics</h3>
+          <p>
+            Add consistent subjects, user needs and story forms to understand what
+            you publish and how audiences respond to it.
+          </p>
+        </article>
+
+        <article>
+          <h3>Support new revenue</h3>
+          <p>
+            Connect coverage to places, topics and organizations in ways that support
+            sponsorships, fundraising and other commercial products.
+          </p>
+        </article>
+      </div>
+
+      <p class="use-cases-more">
+        See more experiments and examples in the
+        <a href="https://github.com/localangle/backfield-cookbook">Backfield Cookbook</a>.
+      </p>
+    </section>
+
+    <section class="faq">
+      <div class="section-heading">
+        <p class="eyebrow">FAQ</p>
+        <h2>Questions about Backfield</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>Who is Backfield for?</summary>
+          <p>
+            Backfield is designed for news organizations that want to build
+            products from their coverage, improve metadata, understand reporting
+            patterns or create a reliable knowledge layer for AI and search.
+          </p>
+        </details>
+        <details>
+          <summary>How do I get started using Backfield?</summary>
+          <p>
+            Backfield is an open source platform, and you are welcome to run it
+            locally or deploy it yourself by following the directions here.
+          </p>
+          <p>
+            Local Angle also offers hosting, onboarding and consulting services if
+            you would like to run the platform without technical overhead.
+            Contact <strong>backfield@localangle.co</strong> if you’re interested.
+          </p>
+        </details>
+        <details>
+          <summary>How is AI used in Backfield?</summary>
+          <p>
+            XXX
+          </p>
+        </details>
+        <details>
+          <summary>Which models does it support?</summary>
+          <p>
+            Backfield is model-agnostic. Out of the box, it works with the broad range
+            of hosted and open models supported by the
+            <a href="https://models.litellm.ai/">LiteLLM ecosystem</a>, including models
+            from OpenAI, Anthropic, Google, xAI and many others. It can also be configured
+            to use self-hosted or proprietary models.
+          </p>
+        </details>
+        <details>
+          <summary>What about privacy? Who gets access to our data?</summary>
+          <p>
+            Backfield gives you control over where your data goes. When a workflow uses
+            an external language model, geocoder or search service, the information
+            needed for that step is sent to the provider you have configured and is
+            governed by that provider’s privacy and data-retention policies.
+          </p>
+          <p>
+            Many commercial model APIs do not use customer API data to train their
+            models by default, but policies vary by provider and service. Backfield can
+            also be configured to use self-hosted or proprietary models when tighter
+            data controls are required.
+          </p>
+          <p>
+            We can work with your organization to choose providers and deployment
+            options that meet your privacy and security requirements.
+          </p>
+        </details>
+        <details>
+          <summary>Can there be humans in the loop?</summary>
+          <p>
+            Absolutely. Like all automated systems, Backfield will make some mistakes 
+            — whether that’s geocoding a place incorrectly or tagging an article with
+            metadata you might not agree with.
+          </p>
+          <p>
+            To what extent you need to correct those mistakes depends on your product
+            needs. The system generally does a pretty good job, and if you can tolerate
+            some errors around the edges, you may decide you don’t need human review at all.
+          </p>
+          <p>
+            But Backfield data is at its best when it is at leat occasionally reviewed by
+            reporters and editors. There are a number of tools in the system designed to
+            make that process quick and easy. And we can also do things like integrate
+            with Slack to notify reporters and editors when there’s something they may
+            want to check and correct.
+          </p>
+          <p>
+            The system gets faster and more accurate if you are able to maintain a clean
+            and reliable Stylebook, so any effort you put into cleaning your data is paid
+            back as time goes on.
+          </p>
+          <p>
+            At the end of the day, the level of human involvement you need is up to you.
+          </p>
+        </details>
+        <details>
+          <summary>We don’t have an engineering team. Can we still use Backfield?</summary>
+          <p>
+            XX
+          </p>
+        </details>
+        <details>
+          <summary>How much does it cost?</summary>
+          <p>
+            Backfield costs depend almost entirely on how you use it. A lightweight
+            deployment running locally, using basic language models and no commercial
+            geocoding or search services, might cost only a few dollars per month.
+            Workflows that apply only metadata or semantic embeddings can cost even less.
+          </p>
+          <p>
+            For a mid-sized regional publisher producing 30–50 stories per day and
+            running them through a fully featured workflow with high-end models, typical
+            costs might look something like this:
+          </p>
+          <ul>
+            <li><strong>AI models:</strong> $150–$200 per month.</li>
+            <li><strong>External services:</strong> $50–$150 per month for services such as geocoding and search.</li>
+            <li>
+              <strong>Hosting and storage:</strong> roughly $300–$1,000 per month using
+              the patterns in <a href="https://github.com/localangle/backfield-hosting">backfield-hosting</a>,
+              depending on capacity, redundancy and architecture.
+            </li>
+          </ul>
+          <p>
+            Those numbers can vary considerably. Model costs depend on what you choose
+            to run, and Backfield can be hosted for substantially less — or more —
+            depending on your architecture. A well-maintained Stylebook can also reduce
+            costs and improve performance by avoiding unnecessary calls to external
+            services.
+          </p>
+          <p>
+            Local Angle offers managed multi-tenant and single-tenant hosting, along with
+            onboarding and consulting services. <a href="/work-with-us">Get in touch</a>
+            to learn more.
+          </p>
+        </details>
+        <details>
+          <summary>How do you load stories into Backfield?</summary>
+          <p>
+            Backfield can ingest stories in several ways. A dedicated full-text RSS or
+            JSON feed is usually the simplest, but it can also scrape articles directly
+            from your website or connect to another source you provide.
+          </p>
+        </details>
+        <details>
+          <summary>Does it work for things that aren’t journalism?</summary>
+          <p>
+            Yes, with some adaptation. Backfield is designed around the conventions and
+            structure of news articles, so its default extractions, metadata and workflows
+            are built with journalism in mind.
+          </p>
+          <p>
+            But the underlying system is flexible. With different prompts, schemas and
+            workflows, Backfield has also been used to process civic information and
+            other kinds of documents. If you have a use case outside journalism,
+            <a href="/work-with-us">we’d be interested in exploring it with you</a>.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="hosted">
+      <div class="section-copy">
+        <h2>Want to try Backfield without running it yourself?</h2>
+        <p>
+          Local Angle operates a hosted version of Backfield for organizations
+          that want to adopt the platform but not manage its infrastructure.
+        </p>
+        <p>
+          <a class="button" href="https://forms.gle/4TsNHXGZqxmJN4Zw9" target="_blank" rel="noopener noreferrer">
+            Join the hosted Backfield waitlist <span aria-hidden="true">→</span>
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <section class="cta">
+      <h2>Put your coverage to work.</h2>
+      <p>
+        <a class="button" href="https://try.backfield.news" target="_blank" rel="noopener noreferrer">Try a demo</a>
+        <a class="text-link" href="https://github.com/localangle/backfield" target="_blank" rel="noopener noreferrer">Get the code</a>
+        <a class="text-link" href="https://docs.backfield.news" target="_blank" rel="noopener noreferrer">Read the docs</a>
+        <a class="text-link" href="/work-with-us" target="_blank" rel="noopener noreferrer">Talk with us <span aria-hidden="true">→</span></a>
+      </p>
+    </section>
+  </article>
+</Base>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-carousel]").forEach((carousel) => {
+    const slides = Array.from(carousel.querySelectorAll<HTMLElement>("[data-carousel-slide]"));
+    const stage = carousel.querySelector<HTMLElement>(".carousel-stage");
+    const rotationDelay = 4000;
+    let active = 0;
+    let rotationTimer: number | undefined;
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    const showSlide = (index: number) => {
+      active = (index + slides.length) % slides.length;
+
+      slides.forEach((slide, slideIndex) => {
+        const isActive = slideIndex === active;
+        slide.classList.toggle("is-active", isActive);
+        slide.setAttribute("aria-hidden", String(!isActive));
+      });
+    };
+
+    const stopRotation = () => {
+      window.clearTimeout(rotationTimer);
+      rotationTimer = undefined;
+    };
+
+    const startRotation = () => {
+      stopRotation();
+      if (reducedMotion || document.hidden) return;
+      rotationTimer = window.setTimeout(() => {
+        showSlide(active + 1);
+        startRotation();
+      }, rotationDelay);
+    };
+
+    document.addEventListener("visibilitychange", startRotation);
+
+    slides.forEach((slide) => { slide.hidden = false; });
+    stage?.classList.add("is-ready");
+    showSlide(0);
+    startRotation();
+  });
+</script>
+
+<style>
+  .backfield {
+    --backfield-wide: 54rem;
+    margin-top: -2.5rem;
+  }
+
+  .hero {
+    max-width: var(--backfield-wide);
+    margin: 0 auto 6rem;
+    text-align: center;
+  }
+
+  .hero h1 {
+    margin: 0;
+    font-size: clamp(2rem, 3.8vw, 3.3rem);
+    font-weight: 420;
+    line-height: 1.02;
+    letter-spacing: -0.04em;
+    text-wrap: balance;
+  }
+
+  .hero-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+
+  .product-carousel {
+    width: min(100%, var(--backfield-wide));
+    margin: 0 auto 2.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .carousel-stage.is-ready {
+    display: grid;
+  }
+
+  .carousel-slide {
+    margin: 0;
+  }
+
+  .carousel-slide[hidden] {
+    display: none;
+  }
+
+  .carousel-stage.is-ready .carousel-slide {
+    grid-area: 1 / 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(0.65rem) scale(0.992);
+    transition:
+      opacity 650ms cubic-bezier(0.22, 1, 0.36, 1),
+      transform 650ms cubic-bezier(0.22, 1, 0.36, 1),
+      visibility 0s linear 650ms;
+    will-change: opacity, transform;
+  }
+
+  .carousel-stage.is-ready .carousel-slide.is-active {
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0) scale(1);
+    transition-delay: 0s;
+  }
+
+  .carousel-slide img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 0.35rem;
+  }
+
+  .carousel-slide figcaption,
+  .detail-image figcaption {
+    margin-top: 0.6rem;
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .carousel-stage.is-ready .carousel-slide {
+      transform: none;
+      transition: none;
+    }
+  }
+
+  @media (max-height: 750px) and (min-width: 761px) {
+    .product-carousel {
+      width: min(100%, 42rem);
+      padding-top: 0.5rem;
+    }
+  }
+
+  .introduction,
+  .capabilities,
+  .how-it-works,
+  .use-cases,
+  .faq,
+  .hosted,
+  .cta {
+    width: min(100%, var(--backfield-wide));
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .introduction {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 2rem;
+    padding-bottom: 5rem;
+  }
+
+  .eyebrow,
+  .capability-number {
+    margin: 0;
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+
+  .lede {
+    max-width: 41rem;
+    margin: 0;
+    font-size: clamp(1.25rem, 2.2vw, 1.8rem);
+    line-height: 1.32;
+    letter-spacing: -0.018em;
+  }
+
+  .capabilities,
+  .how-it-works,
+  .use-cases,
+  .faq,
+  .hosted {
+    border-top: 1px solid var(--rule);
+    padding: 4rem 0 5rem;
+  }
+
+  .hosted .section-copy {
+    max-width: 36rem;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hosted h2 {
+    margin: 0;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 420;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .hosted p {
+    margin: 1.5rem 0 0;
+    color: #4d4840;
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    line-height: 1.55;
+  }
+
+  .hosted p:last-child {
+    margin-top: 2rem;
+  }
+
+  .capabilities > h2,
+  .section-heading h2 {
+    max-width: 34rem;
+    margin: 0;
+    font-size: clamp(1.8rem, 3.5vw, 3rem);
+    font-weight: 420;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+
+  .capabilities-intro {
+    max-width: 36rem;
+    margin: 1.5rem 0 0;
+    color: #4d4840;
+    font-size: 1.06rem;
+    line-height: 1.55;
+  }
+
+  .capability-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 3rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .capability-grid article {
+    padding: 1.4rem 1.4rem 0 0;
+  }
+
+  .capability-grid article + article {
+    padding-left: 1.4rem;
+    border-left: 1px solid var(--rule);
+  }
+
+  .capability-grid h3,
+  .product-list h3,
+  .use-case-grid h3 {
+    margin: 1.5rem 0 0.45rem;
+    font-size: 1.18rem;
+  }
+
+  .capability-grid article > p:last-child,
+  .product-list p,
+  .use-case-grid p {
+    margin: 0;
+    color: #4d4840;
+    font-size: 0.96rem;
+    line-height: 1.5;
+  }
+
+  .section-heading {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+
+  .section-copy {
+    max-width: 34rem;
+  }
+
+  .section-copy h2 {
+    max-width: none;
+  }
+
+  .use-cases-intro {
+    max-width: 32rem;
+    margin: 1.75rem 0 0;
+    color: #4d4840;
+    font-size: clamp(1.05rem, 1.6vw, 1.2rem);
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+  }
+
+  .use-cases-more {
+    margin: 2rem 0 0 12rem;
+    color: #4d4840;
+    font-size: 0.98rem;
+  }
+
+  .product-list {
+    margin-left: 12rem;
+  }
+
+  .product-list article {
+    display: grid;
+    grid-template-columns: 10rem 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--rule);
+  }
+
+  .product-list article:last-child {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .detail-image {
+    margin: 3rem 0 0 12rem;
+  }
+
+  .detail-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--rule);
+    border-radius: 0.35rem;
+  }
+
+  .product-list h3 {
+    margin: 0;
+  }
+
+  .use-case-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 12rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .use-case-grid article {
+    min-height: 11rem;
+    padding: 1.5rem 1.75rem 1.75rem 0;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .use-case-grid article:nth-child(even) {
+    padding-left: 1.75rem;
+    border-left: 1px solid var(--rule);
+  }
+
+  .use-case-grid h3 {
+    margin-top: 0;
+  }
+
+  .faq-list {
+    margin-left: 12rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  .faq-list details {
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .faq-list summary {
+    position: relative;
+    padding: 1.2rem 2rem 1.2rem 0;
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.06rem;
+    font-weight: 500;
+  }
+
+  .faq-list summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-list summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    color: var(--muted);
+    font-family: var(--mono);
+    font-weight: 400;
+  }
+
+  .faq-list details[open] summary::after {
+    content: "−";
+  }
+
+  .faq-list details p {
+    max-width: 36rem;
+    margin: 0;
+    padding: 0 2rem 1.4rem 0;
+    color: #4d4840;
+  }
+
+  .cta {
+    padding: 5rem 0 1rem;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+
+  .cta h2 {
+    margin: 0 0 1.5rem;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 420;
+    letter-spacing: -0.035em;
+  }
+
+  .cta p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin: 0;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 0.65rem 1rem 0.55rem;
+    border-radius: 999px;
+    background: var(--ink);
+    color: var(--bg);
+    text-decoration: none;
+    font-size: 0.88rem;
+  }
+
+  .button:hover {
+    background: var(--teal-ink);
+  }
+
+  .text-link {
+    text-decoration: none;
+    font-size: 0.92rem;
+  }
+
+  .text-link:hover {
+    text-decoration: underline;
+    text-decoration-color: var(--coral);
+  }
+
+  @media (max-width: 760px) {
+    .backfield {
+      margin-top: -1.5rem;
+    }
+
+    .hero {
+      margin-bottom: 4rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 9vw, 3rem);
+    }
+
+    .product-carousel {
+      margin-bottom: 2.5rem;
+      padding-top: 0.75rem;
+    }
+
+    .introduction,
+    .section-heading {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+
+    .capability-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .capability-grid article {
+      min-height: 12rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .capability-grid article + article {
+      border-left: 0;
+    }
+
+    .capability-grid article:nth-child(even) {
+      padding-left: 1.25rem;
+      border-left: 1px solid var(--rule);
+    }
+
+    .product-list,
+    .detail-image,
+    .use-case-grid,
+    .faq-list,
+    .use-cases-more {
+      margin-left: 0;
+    }
+
+    .product-list article {
+      grid-template-columns: 7rem 1fr;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .hero-actions {
+      flex-wrap: wrap;
+      gap: 1rem 1.4rem;
+    }
+
+    .capability-grid,
+    .use-case-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .capability-grid article,
+    .capability-grid article:nth-child(even),
+    .use-case-grid article,
+    .use-case-grid article:nth-child(even) {
+      min-height: 0;
+      padding: 1.4rem 0;
+      border-left: 0;
+    }
+
+    .product-list article {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+    }
+
+    .cta p {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+</style>

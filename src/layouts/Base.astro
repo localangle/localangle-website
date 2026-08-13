@@ -16,6 +16,7 @@ const {
 
 const pageTitle = title ? `${title} — Local Angle` : "Local Angle";
 const path = Astro.url.pathname;
+const isBackfield = path.startsWith("/backfield");
 const isBlog = path.startsWith("/blog");
 const isWork = path.startsWith("/work-with-us");
 ---
@@ -40,6 +41,7 @@ const isWork = path.startsWith("/work-with-us");
           <span>Local Angle</span>
         </a>
         <nav class="site">
+          <a href="/backfield" aria-current={isBackfield ? "page" : undefined}>Backfield</a>
           <a href="/blog" aria-current={isBlog ? "page" : undefined}>Blog</a>
           <a href="/work-with-us" aria-current={isWork ? "page" : undefined}>Work with us</a>
         </nav>
