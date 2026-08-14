@@ -135,7 +135,7 @@ import Base from "../layouts/Base.astro";
       <div class="section-heading">
         <p class="eyebrow">How it’s used</p>
         <div class="section-copy">
-          <h2>Make more from the journalism you already produce.</h2>
+          <h2>Create more value from the journalism you already produce.</h2>
           <p class="use-cases-intro">
             We’ve developed many of these ideas through experiments with working news
             organizations. Consider them just a few examples of what's possible when the
@@ -327,39 +327,28 @@ import Base from "../layouts/Base.astro";
           </p>
         </details>
         <details>
-          <summary>How much does it cost?</summary>
-          <p>
-            Backfield costs depend almost entirely on how you use it. A lightweight
-            deployment running locally, using basic language models and no commercial
-            geocoding or search services, might cost only a few dollars per month.
-            Workflows that apply only metadata or semantic embeddings can cost even less.
-          </p>
-          <p>
-            For a mid-sized regional publisher producing 30–50 stories per day and
-            running them through a fully featured workflow with high-end models, typical
-            costs might look something like this:
-          </p>
-          <ul>
-            <li><strong>AI models:</strong> $150–$200 per month.</li>
-            <li><strong>External services:</strong> $50–$150 per month for services such as geocoding and search.</li>
-            <li>
-              <strong>Hosting and storage:</strong> roughly $300–$1,000 per month using
-              the patterns in <a href="https://github.com/localangle/backfield-hosting">backfield-hosting</a>,
-              depending on capacity, redundancy and architecture.
-            </li>
-          </ul>
-          <p>
-            Those numbers can vary considerably. AI costs depend on what models you choose
-            to run, and Backfield can be hosted for substantially less — or more —
-            depending on your architecture. A well-maintained Stylebook can also reduce
-            costs and improve performance by avoiding unnecessary calls to external
-            services.
-          </p>
-          <p>
-            Local Angle offers managed multi-tenant and single-tenant hosting, along with
-            onboarding and consulting services. <a href="/work-with-us">Get in touch</a>
-            to learn more.
-          </p>
+          <summary>How much does it cost to operate?</summary>
+            <p>
+              Backfield itself is open source, so there is no software license fee to run
+              it yourself. Your costs are whatever infrastructure, model APIs and external
+              services your workflows require.
+            </p>
+            <p>
+              For a mid-sized regional publisher processing 30–50 stories per day, costs for
+              AI models, external geocoders and othe services might typically run a few hundred
+              dollars per month, depending on the workflows and models you choose.
+            </p>
+            <p>
+              Infrastructure costs vary widely depending on how you deploy Backfield. Lightweight
+              deployments can be inexpensive; production systems requiring dedicated resources,
+              redundancy, monitoring, backups and higher throughput will cost more.
+            </p>
+            <p>
+              Local Angle also offers managed hosting for organizations that don't want to deploy
+              and operate the system themselves. Managed pricing includes the infrastructure as well
+              as deployment, maintenance, monitoring, upgrades and support. <a href="https://forms.gle/4TsNHXGZqxmJN4Zw9" target="_blank" rel="noopener noreferrer">Sign up to the waitlist</a>
+              if you are interested.
+            </p>
         </details>
         <details>
           <summary>How do you load stories into Backfield?</summary>
