@@ -1,6 +1,7 @@
 ---
 import { render } from "astro:content";
 import Base from "../../layouts/Base.astro";
+import BackfieldCarousel from "../../components/BackfieldCarousel.astro";
 import { getPosts, formatDate } from "../../lib/posts";
 
 export async function getStaticPaths() {
@@ -13,6 +14,7 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+const showBackfieldCarousel = post.data.carousel === "backfield";
 ---
 <Base title={post.data.title} description={post.data.description}>
   <article class="prose">
@@ -23,6 +25,13 @@ const { Content } = await render(post);
         <time datetime={post.data.date.toISOString()}>{formatDate(post.data.date)}</time>
       </p>
     </header>
+    {showBackfieldCarousel && <BackfieldCarousel class="post-carousel" />}
     <Content />
   </article>
 </Base>
+
+<style>
+  .prose :global(.post-carousel) {
+    margin: 0 0 2.4rem;
+  }
+</style>
