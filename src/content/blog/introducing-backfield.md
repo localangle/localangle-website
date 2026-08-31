@@ -16,7 +16,7 @@ That data can be used in countless ways: to create new products, to enrich analy
 
 Data from Backfield can turn an archive of restaurant reviews into an interactive map, or years of political coverage into a searchable record of what elected officials have said and done. When a story mentions an elected representative, Backfield data can be used to surface it to their constituents — even if nothing in the headline suggests the story might be relevant to them.
 
-Fundamentally, Backfield is built on the idea that [structured journalism](https://restructurednews.substack.com/p/restructuring-structured-journalism) holds new value in the era of generative AI. Partly that’s because large language models make it practical to produce structured data at scale in a way that accounts for journalism’s norms and standards. That simply hasn’t been possible before.
+Fundamentally, Backfield is built on the idea that [structured journalism](https://restructurednews.substack.com/p/restructuring-structured-journalism) holds new value in the era of generative AI. Partly that’s because large language models make it practical to produce structured data at scale in a way that conforms to journalism’s norms and standards. That simply hasn’t been possible before.
 
 But more importantly, structure offers a way to combine the complementary strengths of AI and human journalists. Models are excellent at reading huge amounts of text and doing the tedious work of extracting, classifying and connecting information. But deciding what counts as newsworthy, how things should be categorized and which distinctions matter to a community requires editorial judgment. Backfield uses generative AI for the former while leaving the latter where it belongs: in the hands of journalists.
 
@@ -28,10 +28,10 @@ Local Angle has been building Backfield alongside working news organizations, co
 
 Exploration of the underlying concepts began in late 2024 at the [Minnesota Star Tribune](https://github.com/minneapolisstartribune/agate-ai), supported by the [Lenfest AI Collaborative and Fellowship Program](https://www.lenfestinstitute.org/our-work/lenfest-ai-collaborative-and-fellowship-program/). The idea has been further refined through work with [Chicago Public Media](https://www.chicagopublicmedia.org/) and the [Reynolds Journalism Institute](https://journalism.missouri.edu/department/reynolds-journalism-institute/), eventually maturing into the platform being released today.
 
-The full Backfield platform is available on [GitHub](https://github.com/localangle/backfield) under an [Apache 2.0 license](https://github.com/localangle/backfield/blob/main/LICENSE.md). Developers can download and run it by following the setup instructions in the repository. Backfield remains in active development, and feedback and contributions are welcome.
+The full Backfield platform is available on [GitHub](https://github.com/localangle/backfield) under an [Apache 2.0 license](https://github.com/localangle/backfield/blob/main/LICENSE.md). Anyone can download and run it by following the setup instructions in the repository. Backfield remains in active development, and feedback and contributions are welcome.
 
 A hosted version is also available in private beta for organizations interested in deploying it without the technical challenges of self-hosting. If you or your organization are interested, [sign up for the waitlist](https://forms.gle/4TsNHXGZqxmJN4Zw9).
 
 If you'd like to learn more, you can [read more about Backfield here](https://localangle.co/backfield/), [try a demo](https://try.backfield.news/) or [browse the documentation](https://docs.backfield.news/).
 
-And if you're interested in exploring what Backfield can do for your organization, please email [backfield@localangle.co](mailto:backfield@localangle.co).
+And if you're interested in discussing what Backfield can do for your organization, please email [backfield@localangle.co](mailto:backfield@localangle.co).

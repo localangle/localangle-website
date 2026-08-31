@@ -22,19 +22,19 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
     <section class="introduction">
       <p class="eyebrow">About</p>
       <p class="lede">
-        Beyond the headline and the lede, every news story is full of quotes, anecdotes,
-        people, places, facts and connections that are valuable beyond the story itself.
-        Backfield is an open platform that captures and enriches that information — turning
-        the journalism you produce every day into data you can build with.
+        Every news story contains far more useful information than its headline and lede
+        can capture: people, places, quotes, facts, connections. Backfield is an open
+        platform that captures and enriches that information, turning the journalism you
+        produce every day into structured data you can build with.
       </p>
     </section>
 
     <section class="capabilities">
       <h2>From articles<br />to structured knowledge</h2>
       <p class="capabilities-intro">
-        We tend to think about the article as the atomic unit of journalism. Backfield goes
-        deeper, structuring entities and concepts within each story so they can be connected
-        across your coverage and put to work in new ways.
+        Newsrooms tend to think of the article as the atomic unit of journalism. Backfield goes
+        deeper, structuring entities and concepts within each article so they can be connected
+        across coverage and put to work in new ways.
       </p>
       <div class="capability-grid">
         <article>
@@ -59,7 +59,7 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
           <p class="capability-number">03</p>
           <h3>Describe</h3>
           <p>
-            Classify stories based on subject, user needs, story forms and other metadata,
+            Classify stories based on subject, user needs, story forms and other custom taxonomies,
             then create embeddings to enable semantic search and similarity.
           </p>
         </article>
@@ -68,8 +68,7 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
           <p class="capability-number">04</p>
           <h3>Build</h3>
           <p>
-            Query your coverage by person, place, topic or meaning to power search,
-            feeds, newsletters, analytics and other products.
+          Turn your coverage into data you can search, filter and build products around.
           </p>
         </article>
       </div>
@@ -81,9 +80,9 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
         <div class="section-copy">
           <h2>Get more from journalism<br /> you already produce.</h2>
           <p class="use-cases-intro">
-            We’ve developed many of these ideas through experiments with working news
-            organizations. Consider them just a few examples of what's possible when the
-            information within your journalism is available as structured data.
+          Local Angle has developed Backfield alongside working news organizations.
+          The examples below show what becomes possible when the information within
+          your journalism is made available as structured data.
           </p>
         </div>
       </div>
@@ -218,41 +217,44 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
         <details>
           <summary>Which models does it support?</summary>
           <p>
-            Backfield is model-agnostic. Out of the box, it works with the broad range
-            of hosted and open models supported by the
-            <a href="https://models.litellm.ai/">LiteLLM ecosystem</a>, including models
-            from OpenAI, Anthropic, Google, xAI and popular open-weights alternatives.
-            It can also be configured to use self-hosted or proprietary models.
+            Backfield is model-agnostic. Out of the box, it works with more than 3,000 models
+            available via the <a href="https://models.litellm.ai/">LiteLLM ecosystem</a>,
+            including those from OpenAI, Anthropic, Google, xAI and popular open-weights
+            alternatives. It can also be configured to use self-hosted or proprietary models.
           </p>
         </details>
         <details>
           <summary>What about privacy? Who gets access to our data?</summary>
           <p>
-            Backfield gives you control over where your data goes. When a workflow uses
-            an external language model, geocoder or search service, the information
-            needed for that step is sent to that provider. What happens next is
-            governed by that provider’s privacy and data-retention policies.
+            Typically, processing an article through Backfield means sending its text,
+            or portions of its text, through one more more large language models using
+            those models' APIs.
           </p>
           <p>
-            Many commercial model APIs explicitly do not use customer API data to train 
-            their models, but policies vary by provider and service. Backfield can
-            also be configured to use self-hosted or proprietary models when tighter
-            data controls are required.
+            Different models and model providers have different rules about the data they
+            retain and how they use it. Many commercial model APIs explicitly do not use
+            customer API data to train their models, but policies vary by provider and service.
           </p>
           <p>
-            We can work with your organization to choose providers and deployment
-            options that balance between accuracy, privacy and security.
+            Backfield uses LiteLLM, an open-source Python library, to communicate with supported
+            model providers. LiteLLM runs within Backfield's infrastructure; article text is not
+            routed through or stored by a LiteLLM-hosted proxy or other service.
+          </p>
+          <p>
+            One reason Backfield is model-agnostic is so that you can choose the
+            appropriate model to balance your organization's needs for privacy, speed, accuracy
+            and cost. We can work with you to choose the right models to meet your requirements.
           </p>
         </details>
         <details>
-          <summary>Can there be humans in the loop?</summary>
+          <summary>Can there be journalists in the loop?</summary>
           <p>
             Absolutely. Like all automated systems, Backfield will make some mistakes 
             — whether that’s geocoding a place incorrectly or tagging an article with
             metadata you might not agree with.
           </p>
           <p>
-            To what extent you need to correct those mistakes depends on your product
+            To what extent you choose to correct those mistakes depends on your product
             needs. The system generally does a pretty good job, and if you can tolerate
             some errors around the edges, you may decide you don’t need human review at all.
           </p>
@@ -273,6 +275,23 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
           </p>
         </details>
         <details>
+          <summary>How much staff time does it require?</summary>
+          <p>
+            Similar to the previous question, this depends on your product needs. After the
+            initial setup, it is possible to run Backfield with no staff involvement at all.
+          </p>
+          <p>
+            However, spending a couple hours a week cleaning up and curating the Stylebook
+            can pay huge dividends. At the very least, fixing obvious errors as you observe
+            them is a good practice to adopt.
+          </p>
+          <p>
+            If you are interested in a more high-touch approach, the tools within Backfield
+            should make it possible for a given reporter/editor to review and correct the 
+            data extracted from a single article in just a couple minutes.
+          </p>
+        </details>
+        <details>
           <summary>How much does it cost to operate?</summary>
             <p>
               Backfield itself is open source, so there is no software license fee to run
@@ -280,8 +299,14 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
               services your workflows require.
             </p>
             <p>
+              Beyond your LLMs of choice, Backfield is considerably more accurate
+              if you enable several external services. Specifically, Geocode Earth, Geocodio
+              and Brave Search. These are not required, but they greatly improve results, especially
+              around place extraction and geocoding.
+            </p>
+            <p>
               For a mid-sized regional publisher processing 30–50 stories per day, costs for
-              AI models, external geocoders and othe services might typically run a few hundred
+              AI models, external geocoders and other services might typically run a few hundred
               dollars per month, depending on the workflows and models you choose.
             </p>
             <p>
@@ -331,11 +356,10 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
       </p>
 
       <aside class="cta-hosted">
-        <p class="eyebrow">Hosted Backfield</p>
-        <h3>Don't want to run it yourself?</h3>
+        <h3>Want managed hosting?</h3>
         <p>
-          Local Angle operates a hosted version for organizations that want the
-          platform without managing its infrastructure.
+          Local Angle operates a hosted version of Backfield for organizations that want to
+          run the platform without managing its infrastructure.
         </p>
         <a class="button button-secondary" href="https://forms.gle/4TsNHXGZqxmJN4Zw9" target="_blank" rel="noopener noreferrer">
           Join the waitlist <span aria-hidden="true">→</span>

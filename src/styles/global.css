@@ -1,16 +1,19 @@
-/* Local Angle — global styles */
+/* Local Angle — global styles
+   Design direction: newsprint ledger — cool paper, ink-forward contrast,
+   institutional serif. Avoids warm oatmeal backgrounds and rust accent clichés. */
 
 :root {
-  --bg: #faf8f4;
-  --ink: #211e1a;
-  --muted: #756e63;
-  --rule: #e6e1d7;
+  --bg: #fafbfc;
+  --ink: #141820;
+  --muted: #5c6570;
+  --body-muted: #3d4652;
+  --rule: #dde3ea;
   --coral: #fe6962;
   --coral-ink: #d6463f;
   --teal: #2b8987;
   --teal-ink: #20706e;
 
-  --serif: "Newsreader Variable", "Newsreader", Georgia, "Times New Roman", serif;
+  --serif: "Source Serif 4 Variable", "Source Serif 4", Georgia, "Times New Roman", serif;
   --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
 
   --measure: 41rem;
@@ -46,11 +49,11 @@ a {
 }
 
 a:hover {
-  text-decoration-color: var(--coral);
+  text-decoration-color: var(--teal);
 }
 
 ::selection {
-  background: rgba(254, 105, 98, 0.25);
+  background: rgba(43, 137, 135, 0.18);
 }
 
 /* ----- frame ----- */
@@ -115,7 +118,7 @@ nav.site a[aria-current="page"] {
 
 nav.site a[aria-current="page"] {
   text-decoration: underline;
-  text-decoration-color: var(--coral);
+  text-decoration-color: var(--teal);
   text-underline-offset: 0.25em;
 }
 
@@ -222,7 +225,7 @@ ul.posts a {
 
 ul.posts a:hover {
   text-decoration: underline;
-  text-decoration-color: var(--coral);
+  text-decoration-color: var(--teal);
   text-underline-offset: 0.2em;
 }
 
@@ -284,21 +287,21 @@ ul.posts a:hover {
 .prose blockquote {
   margin: 1.6em 0;
   padding-left: 1.2em;
-  border-left: 2px solid var(--coral);
-  color: var(--muted);
+  border-left: 2px solid var(--rule);
+  color: var(--body-muted);
   font-style: italic;
 }
 
 .prose code {
   font-family: var(--mono);
   font-size: 0.85em;
-  background: #f0ece3;
+  background: #eef2f6;
   padding: 0.12em 0.35em;
   border-radius: 3px;
 }
 
 .prose pre {
-  background: #f3efe6 !important;
+  background: #eef2f6 !important;
   padding: 1em 1.2em;
   border-radius: 4px;
   overflow-x: auto;
