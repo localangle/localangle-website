@@ -7,7 +7,7 @@ carousel: backfield
 
 Today Local Angle is launching [Backfield](https://localangle.co/backfield/), an open-source platform that turns journalism and civic information into structured data you can build with.
 
-What kind of data? It’s really up to you. Out of the box, Backfield can recognize and geocode editorially relevant locations; identify people and extract their quotes; identify organizations like companies and government agencies — and connect them to the people who work there.
+What kind of data? It’s really up to you. Out of the box, Backfield can recognize and geocode editorially relevant locations; identify people and extract their quotes; extract organizations like companies, sports teams and government agencies — and connect them to the people who work there.
 
 It can tag articles with custom taxonomies, such as topics and user needs. It generates semantic embeddings so articles can be searched by meaning, not just keywords. And it can extract custom features from different article types: think ingredients from recipes, scores from sports stories, or times, dates and mapped locations from events roundups.
 
