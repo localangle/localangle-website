@@ -25,7 +25,7 @@ Newsrooms produce enormous amounts of useful information every day, but much of 
 
 Local Angle has been building Backfield alongside working news organizations, collaborating with journalists and technologists to refine the platform and using it to build an array of tools, prototypes and experiments that explore what structured journalism at scale can accomplish — for both mission and business.
 
-Exploration of the underlying concepts began in late 2024 at the [Minnesota Star Tribune](https://github.com/minneapolisstartribune/agate-ai), supported by the [Lenfest AI Collaborative and Fellowship Program](https://www.lenfestinstitute.org/our-work/lenfest-ai-collaborative-and-fellowship-program/). The idea has been further refined through work with [Chicago Public Media](https://www.chicagopublicmedia.org/) and the [Reynolds Journalism Institute](https://journalism.missouri.edu/department/reynolds-journalism-institute/), eventually maturing into the platform being released today.
+We open sourced some of the early ideas at the [Minnesota Star Tribune](https://github.com/minneapolisstartribune/agate-ai) in early 2025, supported by the [Lenfest AI Collaborative and Fellowship Program](https://www.lenfestinstitute.org/our-work/lenfest-ai-collaborative-and-fellowship-program/). The concept was further refined through work with [Chicago Public Media](https://www.chicagopublicmedia.org/) and the [Reynolds Journalism Institute](https://rjionline.org/), eventually maturing into the platform being released today.
 
 The full Backfield platform is available on [GitHub](https://github.com/localangle/backfield) under an [Apache 2.0 license](https://github.com/localangle/backfield/blob/main/LICENSE.md). Anyone can download and run it by following the setup instructions in the repository. Backfield remains in active development, and feedback and contributions are welcome.
 
@@ -33,4 +33,4 @@ A hosted version is also available in private beta for organizations interested 
 
 If you'd like to learn more, you can [read more about Backfield here](https://localangle.co/backfield/), [try a demo](https://try.backfield.news/) or [browse the documentation](https://docs.backfield.news/).
 
-And if you're interested in discussing what Backfield can do for your organization, please email [backfield@localangle.co](mailto:backfield@localangle.co).
+And if you're interested in discussing what Backfield or structured journalism can do for your organization, reach out to [backfield@localangle.co](mailto:backfield@localangle.co).
