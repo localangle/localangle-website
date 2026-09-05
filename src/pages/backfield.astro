@@ -21,12 +21,17 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
 
     <section class="introduction">
       <p class="eyebrow">About</p>
-      <p class="lede">
-        Every news story contains more information than its headline and lede
-        can capture: people, places, quotes, facts, connections. Backfield is an open
-        platform that captures and enriches that information, turning the journalism you
-        produce every day into data you can build with.
-      </p>
+      <div class="introduction-copy">
+        <p class="lede">
+          Every news story contains more than its headline and lede
+          can capture: places, quotes, facts and other useful information, often
+          buried deeply in the narrative where readers won't see them.
+        </p>
+        <p class="lede">
+          Backfield is an open platform that captures and enriches that information,
+          turning the journalism you produce every day into data you can build with.
+        </p>
+      </div>
     </section>
 
     <section class="capabilities">
@@ -356,7 +361,7 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
       </p>
 
       <aside class="cta-hosted">
-        <h3>Want managed hosting?</h3>
+        <h3>Don't have a tech team?</h3>
         <p>
           Local Angle operates a hosted version of Backfield for organizations that want to
           run the platform without managing its infrastructure.
@@ -454,6 +459,10 @@ import BackfieldCarousel from "../components/BackfieldCarousel.astro";
     font-size: clamp(1.25rem, 2.2vw, 1.8rem);
     line-height: 1.32;
     letter-spacing: -0.018em;
+  }
+
+  .lede + .lede {
+    margin-top: 1.4rem;
   }
 
   .capabilities,
