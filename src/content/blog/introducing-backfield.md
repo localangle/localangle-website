@@ -1,6 +1,6 @@
 ---
 title: "Introducing Backfield"
-date: 2026-09-01
+date: 2026-09-08
 description: "Today Local Angle is launching Backfield, an open-source platform that turns journalism into structured data you can build with."
 carousel: backfield
 ---
