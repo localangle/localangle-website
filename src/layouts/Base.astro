@@ -7,11 +7,20 @@ import Mark from "../components/Mark.astro";
 interface Props {
   title?: string;
   description?: string;
+  /** Path under /public, e.g. /images/backfield/carousel-1.png */
+  image?: string;
+  imageWidth?: number;
+  imageHeight?: number;
+  imageAlt?: string;
 }
 
 const {
   title,
   description = "Local Angle is a consultancy and product lab that helps news organizations apply emerging technologies in ways that align with journalistic values.",
+  image,
+  imageWidth,
+  imageHeight,
+  imageAlt,
 } = Astro.props;
 
 const pageTitle = title ? `${title} — Local Angle` : "Local Angle";
@@ -19,6 +28,12 @@ const path = Astro.url.pathname;
 const isBackfield = path.startsWith("/backfield");
 const isBlog = path.startsWith("/blog");
 const isWork = path.startsWith("/work-with-us");
+
+const site = Astro.site ?? new URL("https://localangle.co");
+const pageUrl = new URL(Astro.url.pathname, site).href;
+const absoluteImage = image
+  ? new URL(`${import.meta.env.BASE_URL}${image.replace(/^\//, "")}`, site).href
+  : undefined;
 ---
 <!doctype html>
 <html lang="en">
@@ -29,9 +44,24 @@ const isWork = path.startsWith("/work-with-us");
     <meta name="description" content={description} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="alternate" type="application/rss+xml" title="Local Angle" href="/rss.xml" />
+    <link rel="canonical" href={pageUrl} />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={pageUrl} />
+    {absoluteImage && (
+      <>
+        <meta property="og:image" content={absoluteImage} />
+        {imageWidth && <meta property="og:image:width" content={String(imageWidth)} />}
+        {imageHeight && <meta property="og:image:height" content={String(imageHeight)} />}
+        {imageAlt && <meta property="og:image:alt" content={imageAlt} />}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={pageTitle} />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={absoluteImage} />
+        {imageAlt && <meta name="twitter:image:alt" content={imageAlt} />}
+      </>
+    )}
   </head>
   <body>
     <header class="site frame">
